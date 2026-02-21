@@ -43,6 +43,7 @@ export async function handleRegister() {
     state.username = username;
 
     document.getElementById("mode-username").textContent = `@${username}`;
+    state.userStats = {};
     await loadStats();
     showScreen("mode");
   } catch (err) {

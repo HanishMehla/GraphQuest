@@ -22,7 +22,7 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: true, httpOnly: false },
+    cookie: { secure: process.env.NODE_ENV === 'production', httpOnly: false },
   })
 );
 
@@ -86,3 +86,4 @@ connectDB()
     console.error("Failed to connect to MongoDB:", err);
     process.exit(1);
   });
+  
