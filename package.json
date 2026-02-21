@@ -1,0 +1,24 @@
+{
+  "name": "graphquest",
+  "version": "1.0.0",
+  "description": "Graph algorithm puzzle game",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "seed:hm": "node scripts/seed_hm.js",
+    "seed:ks": "node scripts/seed_ks.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "express-session": "^1.17.0",
+    "mongodb": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "license": "MIT"
+}
