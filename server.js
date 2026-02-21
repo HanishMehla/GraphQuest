@@ -15,6 +15,7 @@ import adminRoutes from "./backend/routes/admin.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.set('trust proxy', 1);
 app.use(express.json());
 app.use(express.static("frontend"));
 app.use(
@@ -22,7 +23,7 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: process.env.NODE_ENV === 'production', httpOnly: false },
+    cookie: { secure: process.env.NODE_ENV === 'production', httpOnly: false, sameSite: 'none' },
   })
 );
 
