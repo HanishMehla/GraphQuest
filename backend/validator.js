@@ -303,3 +303,4 @@ export function validate(
     extra.nodes
   );
 }
+// Validator can also be used to validate the login too, maybe the login page could have been better.
