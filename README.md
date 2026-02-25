@@ -52,6 +52,7 @@ node server.js
 
 Open `http://localhost:3000` in your browser.
 
+Code looks absolutely stunning and well organized without any mess, and the website looks minimal which is very comforting to the eyes. And adding more puzzles could be a hassle although it is a tradeoff, but your code is well maintained to adapt to future modifications. and additional comment mentioned in the validator.js file about the authentication page. And also admin page should be accessible by the mods not everyone. Thank you.
 ---
 
 ## Live Demo
